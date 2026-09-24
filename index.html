@@ -1031,10 +1031,13 @@ window.QUIZ_DATA = {
     const pref = state.preference;
     let character, similarity, isEgg = false;
 
-    /* 隐藏彩蛋：15题中一次都没选"担当"且"独立"≥4 → 家里蹲结局
+    /* 隐藏彩蛋：15题中一次都没选"担当"，且"独立"选了≥4次 → 家里蹲结局
+     * 注意用选项计数判断（raw 含 12 分基数，不能直接比较）；
      * ?egg=1 为演示参数，强制触发 */
+    const picks = {};
+    state.answers.forEach(a => { if (a) picks[a[1]] = (picks[a[1]] || 0) + 1; });
     const eggDemo = new URLSearchParams(location.search).get("egg") === "1";
-    const eggHit = raw["担当"] === 0 && raw["独立"] >= 4;
+    const eggHit = !picks["担当"] && (picks["独立"] || 0) >= 4;
     if (D.easterEgg && (eggDemo || eggHit)) {
       character = D.easterEgg;
       similarity = 99;
