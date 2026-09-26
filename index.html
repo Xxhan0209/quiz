@@ -307,7 +307,7 @@ body.locked{overflow:hidden}
  * ============================================================ */
 window.QUIZ_DATA = {
   /* 数据版本号：修改内容后递增，隔离"已抽题"记录 */
-  version: "v4",
+  version: "v5",
 
   meta: {
     title: "职业图鉴｜你最适合什么职业",
@@ -534,6 +534,11 @@ window.QUIZ_DATA = {
       { style: "humor", text: "公司团建爬山，你爬到一半就想放弃", options: [["咬牙冲顶，绝不认输", "决断"], ["陪同样气喘吁吁的同事慢慢挪", "共情"], ["发现一条索道小路，广而告之", "开创"], ["看地图算剩余路程，再决定撤不撤", "洞察"]] },
       { style: "humor", text: "面试官问：你有什么想问我们的吗？", options: [["薪资结构方便说一下吗？", "决断"], ["团队氛围怎么样，大家处得好吗？", "共情"], ["如果我入职，第一个项目您推荐我做啥？", "开创"], ["这个岗位上一任离职的原因是？", "洞察"]] },
       { style: "humor", text: "房东通知：下月房租涨300，物业还可能跟涨", options: [["当场谈价，谈不拢就换房", "决断"], ["先聊聊感情，房东也不容易", "共情"], ["提议签两年长约锁价，自己负责阳台绿化", "开创"], ["查同小区租金行情，拿数据压价", "洞察"]] },
+      { style: "humor", text: "网购的'买家秀'和'卖家秀'差到离谱", options: [["立刻申请退货，一分钟都不耗", "决断"], ["看客服小姑娘挺辛苦，换个货算了", "共情"], ["自己动手改造，化腐朽为神奇", "开创"], ["翻遍中差评，发现早有前人踩坑", "洞察"]] },
+      { style: "humor", text: "相亲对象全程只讲自己的成功史", options: [["直接问：那你觉得我今天表现怎么样？", "决断"], ["认真捧场，先照顾对方的面子", "共情"], ["把话题拐到一个谁都没想到的新领域", "开创"], ["从点菜细节推断他的真实性格", "洞察"]] },
+      { style: "humor", text: "手机弹出警告：存储空间不足", options: [["狠心清空相册和僵尸APP", "决断"], ["先把家人群里的视频备份出来", "共情"], ["研究一晚上，搭套自动云盘方案", "开创"], ["找出到底哪个APP在偷偷吃空间", "洞察"]] },
+      { style: "humor", text: "外卖显示已送达，但你手里空空如也", options: [["立刻投诉，要求退款赔偿", "决断"], ["猜骑手可能记错楼栋，先打电话", "共情"], ["干脆下楼，自己把饭'侦查'出来", "开创"], ["看配送轨迹，推理饭到底放哪了", "洞察"]] },
+      { style: "humor", text: "游戏十连抽全歪，心态当场爆炸", options: [["卸载游戏，立地成佛", "决断"], ["去群里安慰其他歪卡的难兄难弟", "共情"], ["总结出一套玄学抽卡时辰表", "开创"], ["翻出官方爆率公示，计算期望值", "洞察"]] },
       /* ===== 严肃 ×10 ===== */
       { style: "serious", text: "项目截止日期临近，关键环节出现延误", options: [["重排优先级，保住核心交付", "决断"], ["先了解延误同事的实际困难", "共情"], ["引入新工具压缩剩余流程", "开创"], ["复盘延误环节的根本原因", "洞察"]] },
       { style: "serious", text: "公司组织架构调整，你的岗位受到影响", options: [["主动找上级明确自己的定位", "决断"], ["先关注团队成员的情绪波动", "共情"], ["借调整之机申请转到新业务线", "开创"], ["研究调整背后的战略意图", "洞察"]] },
@@ -544,7 +549,12 @@ window.QUIZ_DATA = {
       { style: "serious", text: "在职进修与繁重工作冲突，只能保一个", options: [["以当前工作为重，暂缓进修", "决断"], ["先与家人商量再决定", "共情"], ["选与工作直接相关的课程两全", "开创"], ["评估两者的长期回报", "洞察"]] },
       { style: "serious", text: "团队核心成员突然提出离职", options: [["迅速确定交接与替补方案", "决断"], ["先深谈，了解真实原因", "共情"], ["借机重新设计团队分工", "开创"], ["分析近期团队氛围的变化", "洞察"]] },
       { style: "serious", text: "合作方单方面要求修改合同关键条款", options: [["明确底线，准备备选方案", "决断"], ["先维持关系，私下再沟通", "共情"], ["提出互利的新合作模式", "开创"], ["研究对方变更条款的动机", "洞察"]] },
-      { style: "serious", text: "年度复盘显示你今年的方向可能选错了", options: [["果断调整，重新规划路径", "决断"], ["和信任的前辈深聊一次", "共情"], ["把错路上积累变成新方向的优势", "开创"], ["拆解失误背后的每个决策节点", "洞察"]] }
+      { style: "serious", text: "年度复盘显示你今年的方向可能选错了", options: [["果断调整，重新规划路径", "决断"], ["和信任的前辈深聊一次", "共情"], ["把错路上积累变成新方向的优势", "开创"], ["拆解失误背后的每个决策节点", "洞察"]] },
+      { style: "serious", text: "两个工作机会：高薪高压与稳定平淡二选一", options: [["列出权重表，当场拍板", "决断"], ["和家人深聊后再做决定", "共情"], ["尝试谈判，把两边条件都谈优", "开创"], ["调研两家公司的真实经营状况", "洞察"]] },
+      { style: "serious", text: "你的直接下属开始越级向上汇报", options: [["当面明确汇报规则和边界", "决断"], ["先了解他越级背后的动机", "共情"], ["顺势建立跨层级的沟通机制", "开创"], ["反思团队管理哪里出了问题", "洞察"]] },
+      { style: "serious", text: "公司主力产品的市场份额连续三个季度下滑", options: [["砍掉边缘产品线，集中火力", "决断"], ["先稳住核心团队的信心", "共情"], ["立项探索第二增长曲线", "开创"], ["深挖客户流失的真实原因", "洞察"]] },
+      { style: "serious", text: "你发现团队引以为傲的核心数据疑似造假", options: [["立刻启动独立核查", "决断"], ["先找当事人私下核实", "共情"], ["建立不可篡改的数据流程", "开创"], ["追溯造假动机和制度漏洞", "洞察"]] },
+      { style: "serious", text: "职业瓶颈期：能力够用，但看不到成长空间", options: [["设定期限，到期就换赛道", "决断"], ["找信得过的前辈聊职业规划", "共情"], ["在职孵化一个新方向", "开创"], ["拆解自己真正的成长诉求", "洞察"]] }
     ],
     relation: [
       /* ===== 幽默 ×10 ===== */
@@ -558,6 +568,11 @@ window.QUIZ_DATA = {
       { style: "humor", text: "你妈学会发朋友圈了，第一条就@你", options: [["冲进评论区盖楼互动到失控", "表达"], ["条条必赞，再手把手教她发美图", "经营"], ["默默把她放进自己动态的分组可见", "独立"], ["承包她此后所有的手机疑难杂症", "担当"]] },
       { style: "humor", text: "春节饭桌，亲戚灵魂拷问：一个月挣多少？", options: [["够花，您就别操这份心了", "表达"], ["反手夸他家孩子，成功转移话题", "经营"], ["财务自由——自由地不告诉您", "独立"], ["顺势给亲戚家孩子指点职业规划", "担当"]] },
       { style: "humor", text: "健身房疑似要跑路，你是会员群群主", options: [["第一时间在群里通报消息", "表达"], ["组织大家建维权群，对接律师", "经营"], ["连夜去把私教课消完", "独立"], ["带头垫钱请律师，帮大家维权", "担当"]] },
+      { style: "humor", text: "朋友把你的秘密当段子讲给了别人", options: [["直接说：这个玩笑一点都不好笑", "表达"], ["笑着揭过，但心里默默记一笔", "经营"], ["想开点，说出去的事就不再是秘密", "独立"], ["主动向知情人澄清，把影响压下来", "担当"]] },
+      { style: "humor", text: "你的自拍被亲戚做成表情包在家族群疯传", options: [["郑重其事要求停止传播", "表达"], ["顺着梗互动，把长辈逗开心", "经营"], ["假装没看见，眼不见心不烦", "独立"], ["干脆发张更高清的，占领审美高地", "担当"]] },
+      { style: "humor", text: "闺蜜和你喜欢上了同一个人", options: [["找她摊开来聊，把话说透", "表达"], ["友谊第一，商量一起退出", "经营"], ["各凭本事，来一场公平竞争", "独立"], ["主动退场成全她", "担当"]] },
+      { style: "humor", text: "你被拉进三个群，每个都在@全体成员", options: [["逐个说明：我只潜水不冒泡", "表达"], ["摸清哪个群有价值，留精去冗", "经营"], ["全部消息免打扰，天下太平", "独立"], ["帮群主把重要通知整理成文档", "担当"]] },
+      { style: "humor", text: "群里有人发砍价链接，这已经是本周第五个", options: [["发起'互砍联盟'，一刀都不吃亏", "表达"], ["全都帮砍，人情攒着慢慢用", "经营"], ["全部无视，眼不见心不烦", "独立"], ["逐个帮砍到底，还附赠砍价攻略", "担当"]] },
       /* ===== 严肃 ×10 ===== */
       { style: "serious", text: "同事对你的工作方案提出尖锐批评", options: [["逐条回应，讲清设计依据", "表达"], ["会后私下沟通，维护协作关系", "经营"], ["坚持己见，用结果验证", "独立"], ["主动承担修订并致谢", "担当"]] },
       { style: "serious", text: "跨部门项目中，各方对目标理解不一致", options: [["组织一次对齐会议说清目标", "表达"], ["逐个沟通关键干系人", "经营"], ["先按自己的理解做出样板", "独立"], ["把模糊地带的任务接过来", "担当"]] },
@@ -568,7 +583,12 @@ window.QUIZ_DATA = {
       { style: "serious", text: "团队士气低落，接连有人请假", options: [["组织坦诚的团队沟通会", "表达"], ["一对一了解每个人的状态", "经营"], ["管好自己的节奏不受影响", "独立"], ["带头扛起最重的任务", "担当"]] },
       { style: "serious", text: "你被临时调去代管一支陌生团队", options: [["坦率说明情况并给出思路", "表达"], ["快速和每个成员建立信任", "经营"], ["按自己的方法低调摸索", "独立"], ["接下挑战，全责推进", "担当"]] },
       { style: "serious", text: "重要关系人长期不回复你的消息", options: [["换一种方式正式表达来意", "表达"], ["通过共同朋友重新建立连接", "经营"], ["顺其自然，不做强求", "独立"], ["为可能的合作先做好全部准备", "担当"]] },
-      { style: "serious", text: "答应帮忙的事临时与自身安排冲突", options: [["第一时间说明并协商新安排", "表达"], ["调整自己的计划兑现承诺", "经营"], ["婉拒并给出替代建议", "独立"], ["推掉自己的安排，践约优先", "担当"]] }
+      { style: "serious", text: "答应帮忙的事临时与自身安排冲突", options: [["第一时间说明并协商新安排", "表达"], ["调整自己的计划兑现承诺", "经营"], ["婉拒并给出替代建议", "独立"], ["推掉自己的安排，践约优先", "担当"]] },
+      { style: "serious", text: "合伙人之间出现利益分配分歧", options: [["把各自的诉求和底线摆上桌", "表达"], ["设计动态调整的分配机制", "经营"], ["先做好自己那份，不掺和纷争", "独立"], ["主动退一步，保住整体合作", "担当"]] },
+      { style: "serious", text: "你和团队主力在方向上出现严重分歧", options: [["正式陈述各自的依据再议", "表达"], ["寻找双方都能接受的第三方案", "经营"], ["保留意见，坚决执行既定路线", "独立"], ["按他的方向先试，结果我负责", "担当"]] },
+      { style: "serious", text: "多年好友创业失败，欠了你一笔钱", options: [["坦诚聊聊他的处境和计划", "表达"], ["把借款转成股份共担风险", "经营"], ["做好这笔钱要不回来的准备", "独立"], ["免掉债务，帮他轻装翻身", "担当"]] },
+      { style: "serious", text: "新领导否定了你坚持三年的项目", options: [["用完整材料陈述项目价值", "表达"], ["摸清新领导的优先级再找切口", "经营"], ["淡然接受，精力转向新阵地", "独立"], ["主动申请继续负责并背上绩效", "担当"]] },
+      { style: "serious", text: "你需要在公开场合纠正权威人士的明显错误", options: [["用请教的方式把问题引出来", "表达"], ["会后私下沟通，保全体面", "经营"], ["不当面说，但坚持做对的", "独立"], ["当场明确指出，后果我来担", "担当"]] }
     ]
   },
 
@@ -648,13 +668,18 @@ window.QUIZ_DATA = {
     result: `qz-result-${D.version}`
   };
 
-  /* ---------- sessionStorage 安全封装（iOS 隐私模式等会抛异常，降级为内存） ---------- */
+  /* ---------- 存储封装 ----------
+   * store:   sessionStorage（锁定状态等，会话级）
+   * persist: localStorage（已抽题记录，跨标签页/刷新/重启都记得）
+   * iOS 隐私模式等会抛异常，降级为内存 */
   const memStore = {};
-  const store = {
-    get(k) { try { return sessionStorage.getItem(k); } catch (e) { return k in memStore ? memStore[k] : null; } },
-    set(k, v) { try { sessionStorage.setItem(k, v); } catch (e) { memStore[k] = v; } },
-    del(k) { try { sessionStorage.removeItem(k); } catch (e) { delete memStore[k]; } }
-  };
+  const makeStore = backend => ({
+    get(k) { try { return backend.getItem(k); } catch (e) { return k in memStore ? memStore[k] : null; } },
+    set(k, v) { try { backend.setItem(k, v); } catch (e) { memStore[k] = v; } },
+    del(k) { try { backend.removeItem(k); } catch (e) { delete memStore[k]; } }
+  });
+  const store = makeStore(window.sessionStorage || window.localStorage);
+  const persist = makeStore(window.localStorage || window.sessionStorage);
 
   /* ---------- 题库：场景 × 问法视角 组合生成，去重 ---------- */
   function questionTextKey(text) {
@@ -672,19 +697,22 @@ window.QUIZ_DATA = {
       const key = questionTextKey(q.text);
       if (!seen.has(key)) { seen.add(key); bank.push(q); }
     };
-    const buildSide = (scenes, angles, cats) => {
+    const buildSide = (scenes, angles, cats, sideKey) => {
       for (let i = 0; i < scenes.length * angles.length; i++) {
         const si = i % scenes.length, ai = Math.floor(i / scenes.length);
+        const style = scenes[si].style === "serious" ? "serious" : "humor";
         add({
           cat: cats[(si + ai) % cats.length],
           text: scenes[si].text + "，" + angles[ai],
           options: rotateOptions(scenes[si].options, i),
-          style: scenes[si].style === "serious" ? "serious" : "humor"
+          style,
+          sceneId: `${sideKey}-${style[0]}-${si}`,  /* 场景唯一标识：用于场景级去重 */
+          angleIdx: ai
         });
       }
     };
-    buildSide(D.scenes.decision, D.angles.decision, D.categories.decision);
-    buildSide(D.scenes.relation, D.angles.relation, D.categories.relation);
+    buildSide(D.scenes.decision, D.angles.decision, D.categories.decision, "d");
+    buildSide(D.scenes.relation, D.angles.relation, D.categories.relation, "r");
     return bank;
   }
   const BANK = buildBank();
@@ -716,18 +744,59 @@ window.QUIZ_DATA = {
     return copy;
   }
 
-  /* ---------- 抽题：按 风格×侧 四池抽取，保证每轮 5幽默+10严肃、两侧全覆盖 ----------
-   * used 记录按池分开：跨轮同池不重复，某池用尽只重置该池 */
+  /* ---------- 抽题：场景级四池抽取 ----------
+   * 规则：
+   *  1. 每轮 15 题 = 5幽默 + 10严肃，决策/人际两侧全覆盖（八维全部可选）
+   *  2. 单轮内场景绝不重复（同一场景只出现一次，换问法也不行）
+   *  3. 跨轮场景不重复，直到该池场景轮尽才重置该池（其他池不受影响）
+   *  4. 同场景跨轮复用时自动换没用过的问法视角
+   *  5. 记录存 localStorage：换标签页、刷新、重开浏览器都记得 */
   function pickQuestionSet(count) {
-    const decDims = new Set(D.decisionDims);
-    const pools = { dh: [], ds: [], rh: [], rs: [] }; /* decision-humor / decision-serious / relation-humor / relation-serious */
-    BANK.forEach((q, i) => {
-      const side = q.options.some(o => decDims.has(o[1])) ? "d" : "r";
-      const style = q.style === "serious" ? "s" : "h";
-      pools[side + style].push(i);
+    const sceneMap = {};  /* sceneId -> [bankIdx...]（每场景5个问法变体） */
+    BANK.forEach((q, i) => { (sceneMap[q.sceneId] = sceneMap[q.sceneId] || []).push(i); });
+    const pools = { dh: [], ds: [], rh: [], rs: [] };  /* 决策-幽默 / 决策-严肃 / 人际-幽默 / 人际-严肃 */
+    Object.keys(sceneMap).forEach(id => {
+      pools[id.split("-").slice(0, 2).join("")].push(id);
     });
 
-    /* 每轮配额：1/3 幽默 + 2/3 严肃；两侧都保留（决策侧=冷 humor+serious 各半、人际侧吃余数） */
+    let saved = {};
+    try { saved = JSON.parse(persist.get(KEYS.used) || "{}"); } catch (e) { saved = {}; }
+    const usedScenes = (saved.s && typeof saved.s === "object" && !Array.isArray(saved.s)) ? saved.s : {};
+    const usedAngles = (saved.a && typeof saved.a === "object" && !Array.isArray(saved.a)) ? saved.a : {};
+
+    const take = (poolKey, amount) => {
+      if (!amount) return [];
+      const sceneIds = pools[poolKey];
+      if (sceneIds.length < amount) throw new Error(`题池${poolKey}场景数量不足`);
+      const usedS = new Set(Array.isArray(usedScenes[poolKey]) ? usedScenes[poolKey] : []);
+      const avail = sceneIds.filter(id => !usedS.has(id));
+
+      /* 优先用从未出现过的场景；不够时才从用过的场景里补——
+         保证该池所有场景都露过面之后，才可能出现任何重复 */
+      let chosenScenes;
+      if (avail.length >= amount) {
+        chosenScenes = secureShuffle(avail).slice(0, amount);
+      } else {
+        chosenScenes = secureShuffle(avail)
+          .concat(secureShuffle(sceneIds.filter(id => usedS.has(id))))
+          .slice(0, amount);
+      }
+      chosenScenes.forEach(id => usedS.add(id));
+      usedScenes[poolKey] = [...usedS];
+      if (!usedAngles[poolKey] || typeof usedAngles[poolKey] !== "object" || Array.isArray(usedAngles[poolKey])) usedAngles[poolKey] = {};
+
+      return chosenScenes.map(id => {
+        const idxs = sceneMap[id];
+        const ua = new Set(Array.isArray(usedAngles[poolKey][id]) ? usedAngles[poolKey][id] : []);
+        let availA = idxs.filter(i => !ua.has(i));
+        if (!availA.length) { ua.clear(); availA = idxs.slice(); } /* 问法全用过则重置该场景问法 */
+        const bankIdx = availA[randomInt(availA.length)];
+        ua.add(bankIdx);
+        usedAngles[poolKey][id] = [...ua];
+        return BANK[bankIdx];
+      });
+    };
+
     const humorCount = Math.round(count / 3);
     const seriousCount = count - humorCount;
     const quotas = [
@@ -736,35 +805,9 @@ window.QUIZ_DATA = {
       ["ds", Math.floor(seriousCount / 2)],
       ["rs", seriousCount - Math.floor(seriousCount / 2)]
     ];
-    for (const [key, need] of quotas) {
-      if (pools[key].length < need) throw new Error(`题池${key}数量不足`);
-    }
-
-    let used = {};
-    try { used = JSON.parse(store.get(KEYS.used) || "{}"); } catch (e) { used = {}; }
-    if (typeof used !== "object" || used === null || Array.isArray(used)) used = {};
-
-    const take = (key, amount) => {
-      if (!amount) return [];
-      const pool = pools[key];
-      let usedSet = new Set(
-        (Array.isArray(used[key]) ? used[key] : [])
-          .filter(i => Number.isInteger(i) && i >= 0 && i < BANK.length));
-      let remaining = pool.filter(i => !usedSet.has(i));
-      if (remaining.length < amount) {
-        /* 该池用尽：只重置此池，其他池继续防重复 */
-        usedSet = new Set();
-        remaining = pool.slice();
-      }
-      const chosen = secureShuffle(remaining).slice(0, amount);
-      chosen.forEach(i => usedSet.add(i));
-      used[key] = [...usedSet];
-      return chosen;
-    };
-
     const indexes = secureShuffle(quotas.flatMap(([key, n]) => take(key, n)));
-    store.set(KEYS.used, JSON.stringify(used));
-    return indexes.map(i => BANK[i]);
+    persist.set(KEYS.used, JSON.stringify({ s: usedScenes, a: usedAngles }));
+    return indexes;
   }
 
   /* ---------- 运行状态 ---------- */
