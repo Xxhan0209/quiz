@@ -266,9 +266,9 @@ body.locked{overflow:hidden}
       <div class="lock-mark">🔐</div>
       <div class="hero-sub">IDENTITY ATLAS · PRIVATE ARCHIVE</div>
       <h1>访问验证</h1>
-      <p>这是一份有权限的身份档案测试，请输入四位访问码解锁。</p>
+      <p>这是一份有权限的身份档案测试，请输入访问码解锁。</p>
       <input class="access-input" id="accessInput" type="tel" inputmode="numeric"
-             autocomplete="off" maxlength="4" placeholder="••••" aria-label="四位访问码">
+             autocomplete="off" maxlength="8" placeholder="••••••••" aria-label="访问码">
       <button class="btn primary" id="unlockBtn">立即解锁</button>
       <p class="access-error" id="accessError" aria-live="polite">访问码错误，请重新输入</p>
     </div>
@@ -314,10 +314,11 @@ window.QUIZ_DATA = {
     description: "趣味职业性格测试：15道情境题（1/3整活+2/3正经）测出你最适合的职业类型，还有隐藏彩蛋结局"
   },
 
-  /* ---------- 密码解锁 + 防暴力破解 ---------- */
+  /* ---------- 密码解锁 + 防暴力破解 ----------
+   * code 为主码（自用/客服），批量售卖码见 js/codes.js（tools/gen-codes.js 生成） */
   access: {
     code: "7485",
-    length: 4,
+    length: 8,
     maxAttempts: 5,
     lockoutSchedule: [60, 180, 300]
   },
@@ -642,6 +643,117 @@ window.QUIZ_DATA = {
 
 </script>
   <script>
+/* 自动生成的访问码本（哈希版）：由 tools/gen-codes.js 维护，请勿手改
+ * 批次：B1（+历史） | 生成时间：2026/9/27 10:25:43 | 总有效码数：100 */
+window.QUIZ_CODES = {
+  "salt": "gtyj5cq32hc64ery",
+  "hashes": {
+    "643692798946ac83": "B1",
+    "df0a4beb185a847a": "B1",
+    "9d25a1ece1fb5d0b": "B1",
+    "80fcf8cfcd749b01": "B1",
+    "6faae0cae4291595": "B1",
+    "d1e6f022f524f217": "B1",
+    "0c6f4c7609798823": "B1",
+    "6299211d916f5554": "B1",
+    "fe38d066a546375e": "B1",
+    "87f7edad33630083": "B1",
+    "d421e8c7dc1b97e1": "B1",
+    "c67e4d3ca72c56bc": "B1",
+    "475bb7aa8d539eb3": "B1",
+    "58a3b5b04e38462e": "B1",
+    "098dcfb0d90d4c59": "B1",
+    "fccd9e077e3d33d4": "B1",
+    "3903b51928854f07": "B1",
+    "5c53b76c2594e7b9": "B1",
+    "03312af19a52e35e": "B1",
+    "6acb90ed297a6a46": "B1",
+    "67db1147b047c9c7": "B1",
+    "1f5543c8982878bd": "B1",
+    "4fff6c2a62d38da4": "B1",
+    "94a81d1f994378cb": "B1",
+    "215335500114c692": "B1",
+    "3b7cdb746f11fe0d": "B1",
+    "0c68e827a5091225": "B1",
+    "3c82ee8cc7077fa9": "B1",
+    "0e790cef3c05a879": "B1",
+    "6088b38c94ae9dbb": "B1",
+    "9acaabb5dfd51aa9": "B1",
+    "b54dd5d86d03769a": "B1",
+    "3ab37cab9e7e8fdc": "B1",
+    "468c101c003262d0": "B1",
+    "7451d6784db66ed1": "B1",
+    "c0d42655eeceda9b": "B1",
+    "d970cac1d5be1ad2": "B1",
+    "ee458f1949d317ad": "B1",
+    "74f662d0e1bbb34c": "B1",
+    "b3b724b9323694c9": "B1",
+    "0e990571978eadef": "B1",
+    "ec67a9d7585524d8": "B1",
+    "1dc6f8d916ba3192": "B1",
+    "2d41dd62742b89c3": "B1",
+    "a88dba54128f22ba": "B1",
+    "16af8e2b94048ed6": "B1",
+    "969d4ddbc727d88b": "B1",
+    "9814be08c3c20037": "B1",
+    "cce80c0e8500bc43": "B1",
+    "f2cde7187a0afb64": "B1",
+    "67bfc3d673e0920c": "B1",
+    "b80c0cfdf2e4f12f": "B1",
+    "bf78faa6fcc3819d": "B1",
+    "f817975c83383c69": "B1",
+    "fe0de29686bf8cc4": "B1",
+    "cde012a57d9d2ca1": "B1",
+    "cb7296e5f4bd7be0": "B1",
+    "5b83d2f2f00f0e6c": "B1",
+    "90c7dfbf14cc5647": "B1",
+    "22dcd3f1e290ce81": "B1",
+    "2d9ef763d25931a4": "B1",
+    "d2c5830de9d333c5": "B1",
+    "9f0513717c404f61": "B1",
+    "0ef2c3330f57c728": "B1",
+    "ac88e930dd0d4e99": "B1",
+    "0f134e6295a40ff3": "B1",
+    "a819f0b1590230e0": "B1",
+    "23d3e3a2b0d0786c": "B1",
+    "08006aebcf994f80": "B1",
+    "68cacea3d1500605": "B1",
+    "e9cc32d1f71037d6": "B1",
+    "f0fe1ca7a1cf0201": "B1",
+    "c8cba5383adad837": "B1",
+    "ba6a8f9fcdab4654": "B1",
+    "a025464e4eaee34e": "B1",
+    "121e3e56cb66a68e": "B1",
+    "43c73387bedb4c32": "B1",
+    "1dc353cc13bc9c35": "B1",
+    "c865ab6bc129e674": "B1",
+    "7e924dd77f0d384a": "B1",
+    "b29ad770b47c4184": "B1",
+    "6a06c83067d13665": "B1",
+    "9939b95a9d199acf": "B1",
+    "3a8a38450b50d3b3": "B1",
+    "ac9931f05058884e": "B1",
+    "2a10e13722d7d2f9": "B1",
+    "46e150c831f0618c": "B1",
+    "0ac514c573ddb13f": "B1",
+    "b1893b303eb7b46e": "B1",
+    "32dec8e86911af4b": "B1",
+    "4940d58b360b8c0b": "B1",
+    "0ffa3362c2514711": "B1",
+    "eabbc82bd287ac02": "B1",
+    "17433a8f5d5e0435": "B1",
+    "99cbd386d0e4ec5d": "B1",
+    "7fb9c59b67f70401": "B1",
+    "047ac11d25f44f98": "B1",
+    "55e2486aaf24bd9f": "B1",
+    "84aec34b0d87674e": "B1",
+    "369bf1428cc86d4b": "B1"
+  },
+  "total": 100
+};
+
+</script>
+  <script>
 /* ============================================================
  * 答题网站核心引擎（一般不需要修改；内容配置见 js/data.js）
  * 模块：安全存储 / 访问码解锁+防暴力破解 / 组合题库 / 安全抽题 /
@@ -930,6 +1042,29 @@ window.QUIZ_DATA = {
   $("#saveModalTitle").textContent = D.result.saveModal.title;
   $("#saveModalTip").textContent = D.result.saveModal.tip;
 
+  /* ---------- 访问码校验 ----------
+   * 主码：data.js access.code（自用/客服）
+   * 批量码：js/codes.js 只存 cyrb53 哈希（线上看不到真实码） */
+  function cyrb53(str, seed = 0) {
+    let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+    for (let i = 0, ch; i < str.length; i++) {
+      ch = str.charCodeAt(i);
+      h1 = Math.imul(h1 ^ ch, 2654435761);
+      h2 = Math.imul(h2 ^ ch, 1597334677);
+    }
+    h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+    h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+    return (h2 >>> 0).toString(16).padStart(8, "0") + (h1 >>> 0).toString(16).padStart(8, "0");
+  }
+  function isValidCode(val) {
+    if (val === String(D.access.code)) return true;
+    const C = window.QUIZ_CODES;
+    if (C && C.salt && C.hashes) {
+      return Object.prototype.hasOwnProperty.call(C.hashes, cyrb53(val + C.salt));
+    }
+    return false;
+  }
+
   /* ---------- 访问码解锁 + 防暴力破解 ---------- */
   const UNLOCK_LABEL = "立即解锁";
   let countdownTimer = null;
@@ -971,7 +1106,7 @@ window.QUIZ_DATA = {
   function unlock() {
     if (lockState().active) return;
     const input = $("#accessInput"), err = $("#accessError");
-    if (input.value.trim() !== String(D.access.code)) {
+    if (!isValidCode(input.value.trim())) {
       const fails = Number(store.get(KEYS.fails) || 0) + 1;
       store.set(KEYS.fails, String(fails));
       if (fails >= D.access.maxAttempts) {
@@ -1018,6 +1153,9 @@ window.QUIZ_DATA = {
     setTimeout(() => { if (!lockState().active) unlock(); }, 150);
   }
   refreshLockUI();
+  /* 访问码位数与占位符按配置自适应（批量码为 8 位） */
+  accessInput.maxLength = D.access.length;
+  accessInput.placeholder = "•".repeat(D.access.length);
 
   /* ---------- 流程控制 ---------- */
   const sections = [introSec, prefSec, questionSec, resultSec];
